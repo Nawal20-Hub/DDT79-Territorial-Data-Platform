@@ -1,1 +1,56 @@
+# Dictionnaire des données — SGBD Territorial
+
+## 1. COMMUNE
+- id_commune : identifiant unique
+- nom_commune : nom officiel
+- code_insee : code INSEE
+- code_postal : code postal
+- population : population municipale
+- superficie : surface en hectares
+
+## 2. PARCELLE
+- id_parcelle : identifiant unique
+- id_commune : FK → COMMUNE
+- section : section cadastrale
+- numero : numéro de parcelle
+- surface : surface cadastrale
+- geom : géométrie (PostGIS)
+
+## 3. BATIMENT
+- id_batiment : identifiant unique
+- id_parcelle : FK → PARCELLE
+- type_batiment : maison / immeuble / industriel
+- annee_construction : année
+- geom : géométrie (PostGIS)
+
+## 4. LOGEMENT
+- id_logement : identifiant unique
+- id_batiment : FK → BATIMENT
+- type_logement : T1 / T2 / T3 / maison
+- surface_habitable : m²
+- statut_occupation : propriétaire / locataire / vacant
+
+## 5. DVF (Transactions immobilières)
+- id_dvf : identifiant unique
+- id_parcelle : FK → PARCELLE
+- date_vente : date
+- valeur_fonciere : €
+- type_local : maison / appartement
+- surface : m²
+
+## 6. ENTREPRISE (SIRENE)
+- id_entreprise : identifiant unique
+- siret : numéro SIRET
+- nom_entreprise : raison sociale
+- activite : code APE
+- adresse : adresse
+- id_commune : FK → COMMUNE
+
+## 7. ADRESSE (BAN)
+- id_adresse : identifiant unique
+- voie : nom de la voie
+- numero : numéro
+- code_postal : code postal
+- id_commune : FK → COMMUNE
+- geom : géométrie (PostGIS)
 
