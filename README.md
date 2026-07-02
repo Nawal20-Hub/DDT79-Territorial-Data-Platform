@@ -1,48 +1,56 @@
-DDT79 Territorial Data Platform
-Plateforme de données territoriales — Portfolio Data Analyst (DDT79)
+**🗂️ DDT79 Territorial Data Platform**  
+**Plateforme de données territoriales — Portfolio Data Analyst (DDT79)**
 
-Ce dépôt présente une plateforme complète de gestion, d’analyse et de visualisation de données territoriales, construite pour démontrer mes compétences en tant que Data Analyst dans un contexte DDT (Direction Départementale des Territoires).
 
-🎯 Objectifs
-Concevoir un SGBD territorial complet (PostgreSQL + PostGIS)
+📊 Ce dépôt présente une plateforme complète de gestion, d’analyse et de visualisation de données territoriales, construite pour démontrer mes compétences en tant que Data Analyst dans un contexte DDT (Direction Départementale des Territoires).
 
-Collecter, nettoyer et fiabiliser des données publiques
 
-Produire des analyses territoriales utiles aux politiques publiques
+🎯 Objectifs :
 
-Générer des cartes, graphiques et rapports automatisés
+- Concevoir un SGBD territorial complet (PostgreSQL + PostGIS)
+- Collecter, nettoyer et fiabiliser des données publiques
 
-Documenter chaque étape de manière professionnelle
+- Produire des analyses territoriales utiles aux politiques publiques
 
-🧱 Architecture générale
-Données publiques → ETL R → PostgreSQL/PostGIS → Analyses SQL/R → Cartes & Rapports → Documentation
+- Générer des cartes, graphiques et rapports automatisés
 
-📂 Structure du dépôt
-Projet_01_SGBD — Conception du système de gestion de base de données territorial
+- Documenter chaque étape de manière professionnelle
 
-Projet_02_ETL_R — Pipeline ETL complet avec R
 
-Projet_03_Observatoire_Habitat — Analyses habitat & logement
+🧱 Architecture générale :
 
-Projet_04_PostGIS — Analyses foncières et géospatiales
+- Données publiques → ETL R → PostgreSQL/PostGIS → Analyses SQL/R → Cartes & Rapports → Documentation
 
-Projet_05_Qualite_Donnees — Système de contrôle qualité des données
 
-Projet_06_Observatoire_Territorial — Rapport territorial complet Deux-Sèvres
+📂 Structure du dépôt :
 
-docs/ — Documentation technique
+- Projet_01_SGBD — Conception du système de gestion de base de données territorial
 
-images/ — Schémas, cartes, graphiques
+- Projet_02_ETL_R — Pipeline ETL complet avec R
 
-🛠️ Technologies
-PostgreSQL
+- Projet_03_Observatoire_Habitat — Analyses habitat & logement
 
-PostGIS
+- Projet_04_PostGIS — Analyses foncières et géospatiales
 
-SQL
+- Projet_05_Qualite_Donnees — Système de contrôle qualité des données
 
-R (tidyverse, DBI, RPostgres)
+- Projet_06_Observatoire_Territorial — Rapport territorial complet Deux-Sèvres
 
-Quarto
+- docs/ — Documentation technique
 
-Git / GitHub
+- images/ — Schémas, cartes, graphiques
+
+
+🛠️ Technologies :
+
+- PostgreSQL
+
+- PostGIS
+
+- SQL
+
+- R (tidyverse, DBI, RPostgres)
+
+- Quarto
+
+- Git / GitHub
